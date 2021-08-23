@@ -1,0 +1,71 @@
+{
+    "name": "PlayerActions",
+    "maps": [
+        {
+            "name": "PlayerMap",
+            "id": "02a01cbc-ee4d-4cc6-b85e-bb905902bbb7",
+            "actions": [
+                {
+                    "name": "Red",
+                    "type": "Button",
+                    "id": "1fd29708-e096-4312-8008-165e3c81c4df",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Green",
+                    "type": "Button",
+                    "id": "021a8185-c8f8-4682-9edb-1466a298f855",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Blue",
+                    "type": "Button",
+                    "id": "869d5e70-6a33-4e5d-afc3-50ef88a9a98c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a8cf6a70-5cbf-4d4b-92ba-33b3a7431b36",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Red",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b59756e-04ac-4966-ac5c-1d71439a7c50",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Green",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95f6be99-50bd-4a26-b274-9342713eb921",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Blue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
