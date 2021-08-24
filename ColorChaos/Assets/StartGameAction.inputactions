@@ -1,0 +1,52 @@
+{
+    "name": "StartGameAction",
+    "maps": [
+        {
+            "name": "StartGameMap",
+            "id": "72f7f648-491b-493c-afe0-bc4f85b2e9f2",
+            "actions": [
+                {
+                    "name": "Play",
+                    "type": "Button",
+                    "id": "98f08544-3e1e-4d13-b086-59b7f5bc4c87",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "f5329a36-8cb1-4556-a2a8-88451e34e2e2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "268c75ce-3adf-46ec-adf6-b602a5b14f64",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "89f2402e-8ad8-4d5e-8580-4b2c038447d6",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

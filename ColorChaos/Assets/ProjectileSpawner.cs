@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ProjectileSpawner : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class ProjectileSpawner : MonoBehaviour
     public int HiScore;
     public Text ScoreText;
     public Text HiScoreText;
+    public Text LivesText;
+    public float Speed = -100;
+    public int Lives = 3;
 
     /*
     IEnumerator Spawn()
@@ -43,7 +47,7 @@ public class ProjectileSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Speed--;
 
         WaitTimer++;
 
@@ -71,7 +75,13 @@ public class ProjectileSpawner : MonoBehaviour
             PlayerPrefs.SetInt("HiScore", Score);
         }
 
+        if(Lives <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
+
         ScoreText.text = "Score: " + Score.ToString();
         HiScoreText.text = "High Score: " + HiScore.ToString();
+        LivesText.text = "Lives: " + Lives.ToString();
     }
 }

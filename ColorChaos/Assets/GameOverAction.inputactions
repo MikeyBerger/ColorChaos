@@ -1,0 +1,71 @@
+{
+    "name": "GameOverAction",
+    "maps": [
+        {
+            "name": "GameOverMap",
+            "id": "81b3d348-be9b-4fb7-a753-d75ff1c2839c",
+            "actions": [
+                {
+                    "name": "Delete",
+                    "type": "Button",
+                    "id": "5aabab8b-e305-4aa7-9dc4-27ed8594da34",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Replay",
+                    "type": "Button",
+                    "id": "db8fc720-6d27-450f-981a-193d29071ed2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "4586ca79-a757-42a7-beae-e0d2815d329b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3c4729fd-2a8f-4d44-92d1-7f658d87a01b",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Delete",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "606a9003-2192-4f1d-abc6-5d46ce4922db",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Replay",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "869f1913-a3a7-4d64-bb2e-30cf851d99e9",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

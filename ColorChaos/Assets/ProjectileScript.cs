@@ -22,8 +22,10 @@ public class ProjectileScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RB.velocity = new Vector2(0, Speed) * Time.deltaTime;
+        RB.velocity = new Vector2(0, PS.Speed) * Time.deltaTime;
+        //transform.Translate(0, PS.Speed * Time.deltaTime, 0);
         Score = PS.Score;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -33,6 +35,11 @@ public class ProjectileScript : MonoBehaviour
             SR.enabled = false;
             //Score++;
             PS.Score++;
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Destroy")
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -43,7 +50,14 @@ public class ProjectileScript : MonoBehaviour
             SR.enabled = false;
             //Score++;
             PS.Score++;
-            Speed = Speed - 0.5f;
+            PS.Speed = PS.Speed - Random.Range(0.5f, 2.5f);
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Destroy")
+        {
+            Destroy(gameObject);
         }
     }
+
+
 }
